@@ -67,26 +67,26 @@ No requiere librerías externas
 ## ▶️ Uso
 
 Ejecuta el script:
-'''
+```
 python magic_spoofer.py
-'''
+```
 
 📄 Ejemplo práctico
 
 Archivo original:
-'''
+```
 hello.php
-'''
+```
 
 Contenido real:
-'''
+```
 <?php echo "Hola mundo"; ?>
-'''
+```
 
 Resultado:
-'''
+```
 imagen.png
-'''
+```
 
 ➡️ El archivo puede ser detectado como PNG por herramientas básicas, aunque el contenido sigue siendo PHP.
 
