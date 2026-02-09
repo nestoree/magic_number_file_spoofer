@@ -16,10 +16,10 @@ Los magic numbers (o file signatures) son secuencias de bytes al inicio de un ar
 
 Ejemplos:
 
-PNG → 89 50 4E 47 0D 0A 1A 0A
-JPG → FF D8 FF
-PDF → %PDF
-ZIP → 50 4B 03 04
+- PNG → 89 50 4E 47 0D 0A 1A 0A
+- JPG → FF D8 FF
+- PDF → %PDF
+- ZIP → 50 4B 03 04
 
 Muchos sistemas utilizan estos bytes para identificar archivos, no la extensión.
 
