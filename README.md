@@ -54,7 +54,7 @@ Los tipos de archivos soportados están en el archivo 'numbers.txt' se pueden ag
 
 ## 🛠️ Requisitos
 
-Python 3.6 o superior
+![Python Version](https://img.shields.io/badge/python-3.6+-blue.svg)
 No requiere librerías externas
 
 ---
