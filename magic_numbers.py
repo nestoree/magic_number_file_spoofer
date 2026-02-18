@@ -1,14 +1,39 @@
 import os
 
-MAGIC_NUMBERS = {
-    "PNG": bytes.fromhex("89 50 4E 47 0D 0A 1A 0A"),
-    "JPG": bytes.fromhex("FF D8 FF"),
-    "GIF": b"GIF89a",
-    "PDF": b"%PDF",
-    "ZIP": bytes.fromhex("50 4B 03 04")
-}
+MAGIC_FILE = "magic_numbers.txt"
+
+def load_magic_numbers():
+    magic_numbers = {}
+
+    if not os.path.isfile(MAGIC_FILE):
+        print(f"[-] No se encuentra {MAGIC_FILE}")
+        return magic_numbers
+
+    with open(MAGIC_FILE, "r") as f:
+        for line in f:
+            line = line.strip()
+
+            if not line or "=" not in line:
+                continue
+
+            file_type, hex_value = line.split("=", 1)
+            file_type = file_type.strip().upper()
+            hex_value = hex_value.strip()
+
+            try:
+                magic_numbers[file_type] = bytes.fromhex(hex_value)
+            except ValueError:
+                print(f"[-] Hex inválido en {file_type}")
+
+    return magic_numbers
 
 def main():
+    MAGIC_NUMBERS = load_magic_numbers()
+
+    if not MAGIC_NUMBERS:
+        print("[-] No hay magic numbers disponibles.")
+        return
+
     input_file = input("[+] Archivo de entrada: ").strip()
 
     if not os.path.isfile(input_file):
