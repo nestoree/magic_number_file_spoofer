@@ -101,5 +101,5 @@ Este proyecto es exclusivamente educativo.
 
 ## 📜 Licencia
 
-MIT License
-Uso libre con fines educativos.
+![License](https://img.shields.io/badge/license-MIT-green.svg)
+### Uso libre con fines educativos.
