@@ -48,12 +48,7 @@ Guarda un nuevo archivo modificado
 
 ## 🧩 Tipos de archivo soportados
 
-- PNG
-- JPG
-- GIF
-- PDF
-- ZIP
-(Se pueden añadir más fácilmente en el código)
+Los tipos de archivos soportados están en el archivo 'numbers.txt' se pueden agregar más fácilmente editando el archivo.
 
 ---
 
